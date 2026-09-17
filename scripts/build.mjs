@@ -40,6 +40,7 @@ export function attachEvaluations(site, scores, recommended, manifest, policy, s
   if (recommended.policy_id !== policy.policy_id || recommended.policy_digest !== policy.policy_digest) throw new Error("recommendation policy binding mismatch");
   const scoreByAsset = new Map((scores.records || []).map((row) => [row.asset_id, row]));
   const recommendationByAsset = new Map((recommended.records || []).map((row) => [row.asset_id, row]));
+  if (scores.record_count !== scores.records?.length || scoreByAsset.size !== scores.record_count || recommended.record_count !== recommended.records?.length || recommendationByAsset.size !== recommended.record_count) throw new Error("evaluation record count mismatch");
   site.assets = site.assets.map((asset) => {
     const score = scoreByAsset.get(asset.name);
     if (!score) return { ...asset, evaluation: null };
