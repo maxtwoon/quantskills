@@ -32,7 +32,9 @@ export function verifyBuild(outputDir, snapshot) {
   }
   if (site.evaluations) {
     const recommended = site.assets.filter((asset) => asset.evaluation?.recommended).length;
-    if (site.evaluations.mode !== "shadow" || site.evaluations.score_record_count !== 218 || site.evaluations.recommended_record_count !== recommended || !/^[0-9a-f]{64}$/.test(site.evaluations.snapshot_digest || "")) throw new Error("invalid evaluation summary");
+    const scored = site.assets.filter((asset) => asset.evaluation).length;
+    const count = site.evaluations.score_record_count;
+    if (site.evaluations.mode !== "shadow" || !Number.isInteger(count) || count < scored || count > snapshot.assets.length || site.evaluations.recommended_record_count !== recommended || !/^[0-9a-f]{64}$/.test(site.evaluations.snapshot_digest || "")) throw new Error("invalid evaluation summary");
   }
   const count = model.assets.length;
   const zhCount = new RegExp(`<strong>${count}</strong>\\s*<br>\\s*<sub>资产</sub>`);

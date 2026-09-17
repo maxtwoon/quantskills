@@ -18,7 +18,7 @@ function fixture() {
   const scores = {
     catalog_snapshot_id: snapshot,
     mode: "shadow",
-    record_count: 218,
+    record_count: 1,
     records: [{
       asset_id: "skill-one",
       commit_sha: "1".repeat(40),
@@ -60,6 +60,18 @@ test("build joins public scores and Shadow recommendations by asset id", () => {
   assert.equal(result.assets[0].evaluation.recommended, true);
   assert.equal(result.assets[1].evaluation, null);
   assert.equal(result.evaluations.snapshot_digest, inputs.manifest.snapshot_digest);
+  assert.equal(result.evaluations.score_record_count, 1);
+});
+
+test("build rejects record counts that disagree with the bound dataset", () => {
+  const inputs = fixture();
+  inputs.scores.record_count = 218;
+  inputs.sourceDigests["current-scores.json"] = rawDigest(inputs.scores);
+  inputs.recommended.score_dataset_sha256 = inputs.sourceDigests["current-scores.json"];
+  inputs.sourceDigests["recommended.snapshot.json"] = rawDigest(inputs.recommended);
+  inputs.manifest.files = { ...inputs.sourceDigests };
+  inputs.manifest.snapshot_digest = sha256(canonicalJson(Object.fromEntries(Object.entries(inputs.manifest).filter(([key]) => key !== "snapshot_digest"))));
+  assert.throws(() => attach(inputs), /record count mismatch/);
 });
 
 test("recommended view filters assets and exposes score metadata", () => {

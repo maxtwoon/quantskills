@@ -454,15 +454,15 @@
       },
       "evaluation": {
         "mode": "shadow",
-        "source_publication": "publication.v12.13",
-        "evaluated_commit_sha": "4c93fd6d93a5bca6e4cac178c2cf9d6ef7e8d241",
-        "current_commit": false,
-        "behavior": 97.46,
-        "quality": 82.5,
-        "token": 41.74,
-        "core": 79.79,
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "f3744dfae726fa64a6127e6427ff2e29f9cc7cb5",
+        "current_commit": true,
+        "behavior": 96.52,
+        "quality": 88.75,
+        "token": 41.36,
+        "core": 80.79,
         "featured_status": "eligible",
-        "featured_score": 91.96,
+        "featured_score": 75.39,
         "featured_reason": null,
         "recommended": true,
         "recommendation_rank": 1,
@@ -510,19 +510,19 @@
       },
       "evaluation": {
         "mode": "shadow",
-        "source_publication": "publication.v12.13",
-        "evaluated_commit_sha": "dc7c29e3f953e871574150993dfb036c2403d658",
-        "current_commit": false,
-        "behavior": 97.22,
-        "quality": 42.5,
-        "token": 39.58,
-        "core": 69.13,
-        "featured_status": "eligible",
-        "featured_score": 89.12,
-        "featured_reason": null,
-        "recommended": false,
-        "recommendation_rank": null,
-        "recommendation_group": null
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "6a685a7f0e6524808cf7fffeaca9d4e61b00bca1",
+        "current_commit": true,
+        "behavior": 97.99,
+        "quality": 63.12,
+        "token": 46.17,
+        "core": 76.32,
+        "featured_status": "not_applicable",
+        "featured_score": null,
+        "featured_reason": "no_measurable_headroom",
+        "recommended": true,
+        "recommendation_rank": 3,
+        "recommendation_group": "agent:09"
       }
     },
     {
@@ -577,7 +577,7 @@
         "featured_score": 91.64,
         "featured_reason": null,
         "recommended": true,
-        "recommendation_rank": 3,
+        "recommendation_rank": 2,
         "recommendation_group": "agent:09"
       }
     },
@@ -732,16 +732,16 @@
       },
       "evaluation": {
         "mode": "shadow",
-        "source_publication": "publication.v12.13",
-        "evaluated_commit_sha": "d697366910255a3f1e1174a65f95cc1f5412a879",
-        "current_commit": false,
-        "behavior": 98.58,
-        "quality": 37.5,
-        "token": 41.95,
-        "core": 69.15,
-        "featured_status": "not_applicable",
-        "featured_score": null,
-        "featured_reason": "no_measurable_headroom",
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "9f0f184106c0ae0436f8af115c2bb61153ac482d",
+        "current_commit": true,
+        "behavior": 99.19,
+        "quality": 35,
+        "token": 46.14,
+        "core": 69.88,
+        "featured_status": "eligible",
+        "featured_score": 79.87,
+        "featured_reason": null,
         "recommended": false,
         "recommendation_rank": null,
         "recommendation_group": null
@@ -841,19 +841,19 @@
       },
       "evaluation": {
         "mode": "shadow",
-        "source_publication": "publication.v12.13",
-        "evaluated_commit_sha": "606d818c32a52732a0a3573c0445e1da2500480f",
-        "current_commit": false,
-        "behavior": 98.76,
-        "quality": 74.38,
-        "token": 40.21,
-        "core": 78.03,
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "0405bd04862326010e9376cab4b4c15f52bb35a6",
+        "current_commit": true,
+        "behavior": 95.95,
+        "quality": 52.5,
+        "token": 40.67,
+        "core": 71.27,
         "featured_status": "eligible",
-        "featured_score": 96.39,
+        "featured_score": 23.91,
         "featured_reason": null,
-        "recommended": true,
-        "recommendation_rank": 2,
-        "recommendation_group": "agent:09"
+        "recommended": false,
+        "recommendation_rank": null,
+        "recommendation_group": null
       }
     },
     {
@@ -2381,7 +2381,22 @@
           "reporting"
         ]
       },
-      "evaluation": null
+      "evaluation": {
+        "mode": "shadow",
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "7430dbc0f36751def82e0e4f102066fba12362b7",
+        "current_commit": true,
+        "behavior": 92.25,
+        "quality": 75.62,
+        "token": 39.88,
+        "core": 75,
+        "featured_status": "ineligible",
+        "featured_score": null,
+        "featured_reason": "material_core_regression",
+        "recommended": false,
+        "recommendation_rank": null,
+        "recommendation_group": null
+      }
     },
     {
       "catalog": {
@@ -2642,7 +2657,22 @@
           "reporting"
         ]
       },
-      "evaluation": null
+      "evaluation": {
+        "mode": "shadow",
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "08b9457b8ee8ff93c45e317da9c40a9fc85b5563",
+        "current_commit": true,
+        "behavior": 99.1,
+        "quality": 76.25,
+        "token": 40.49,
+        "core": 78.74,
+        "featured_status": "not_applicable",
+        "featured_score": null,
+        "featured_reason": "no_measurable_headroom",
+        "recommended": true,
+        "recommendation_rank": 7,
+        "recommendation_group": "skill:03"
+      }
     },
     {
       "catalog": {
@@ -2906,13 +2936,13 @@
       },
       "evaluation": {
         "mode": "shadow",
-        "source_publication": "publication.v12.13",
-        "evaluated_commit_sha": "c4d186a9bbedd05890472fd3e2c006cdcfa5d6a9",
-        "current_commit": false,
-        "behavior": 86.6,
-        "quality": 53.12,
-        "token": 39.3,
-        "core": 66.41,
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "777e07a5f6ebec8b55852947e56dcfcd8e090565",
+        "current_commit": true,
+        "behavior": 57.12,
+        "quality": 41.88,
+        "token": 18.27,
+        "core": 43.6,
         "featured_status": "ineligible",
         "featured_score": null,
         "featured_reason": "material_core_regression",
@@ -4135,9 +4165,9 @@
         "featured_status": "not_applicable",
         "featured_score": null,
         "featured_reason": "no_measurable_headroom",
-        "recommended": true,
-        "recommendation_rank": 10,
-        "recommendation_group": "skill:03"
+        "recommended": false,
+        "recommendation_rank": null,
+        "recommendation_group": null
       }
     },
     {
@@ -6377,7 +6407,7 @@
         "featured_score": null,
         "featured_reason": "no_measurable_headroom",
         "recommended": true,
-        "recommendation_rank": 7,
+        "recommendation_rank": 8,
         "recommendation_group": "skill:03"
       }
     },
@@ -6816,7 +6846,7 @@
         "featured_score": null,
         "featured_reason": "no_measurable_headroom",
         "recommended": true,
-        "recommendation_rank": 9,
+        "recommendation_rank": 10,
         "recommendation_group": "skill:03"
       }
     },
@@ -8429,7 +8459,7 @@
         "featured_score": null,
         "featured_reason": "no_measurable_headroom",
         "recommended": true,
-        "recommendation_rank": 8,
+        "recommendation_rank": 9,
         "recommendation_group": "skill:03"
       }
     },
@@ -11705,7 +11735,22 @@
           "reporting"
         ]
       },
-      "evaluation": null
+      "evaluation": {
+        "mode": "shadow",
+        "source_publication": "publication.v12.13.on-demand",
+        "evaluated_commit_sha": "0ca32c8d9c8f7a92ce8f27f14ac82ded7a8adad2",
+        "current_commit": true,
+        "behavior": 82.31,
+        "quality": 69.38,
+        "token": 36.5,
+        "core": 67.62,
+        "featured_status": "eligible",
+        "featured_score": 86.12,
+        "featured_reason": null,
+        "recommended": false,
+        "recommendation_rank": null,
+        "recommendation_group": null
+      }
     },
     {
       "catalog": {
@@ -12416,8 +12461,8 @@
   "compatibility_edges": [],
   "evaluations": {
     "mode": "shadow",
-    "snapshot_digest": "11555a32bfb812a534918c8a33d72cf22d00cff369bd4ddc6cc7508c03677f97",
-    "score_record_count": 218,
+    "snapshot_digest": "5d3c5f01ccc1a47d912614089c125377b418893a4cd2ac681a18625504e483fe",
+    "score_record_count": 217,
     "recommended_record_count": 28,
     "recommendation_policy": "shadow-category-quartile.v1"
   }
